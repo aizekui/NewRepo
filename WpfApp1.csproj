@@ -1,0 +1,103 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <Description>Blend</Description>
+    <PackageIcon>log7.png</PackageIcon>
+    <PackageReleaseNotes>Countk</PackageReleaseNotes>
+    <NeutralLanguage>en-GB</NeutralLanguage>
+    <AssemblyVersion>1.0.0.1</AssemblyVersion>
+    <FileVersion>1.0.0.1</FileVersion>
+    <Copyright>Countk</Copyright>
+    <ApplicationIcon>afj69-8uxpt-002.ico</ApplicationIcon>
+    <UserSecretsId>b2619aa3-bdbf-45eb-ae03-a4f11c8fbd8a</UserSecretsId>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <AssemblyName>Countk</AssemblyName>
+    <RootNamespace>Countk</RootNamespace>
+    <StartupObject>WpfApp1.App</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="png\1.png" />
+    <None Remove="png\close.png" />
+    <None Remove="png\log.png" />
+    <None Remove="png\log1.png" />
+    <None Remove="png\log2.png" />
+    <None Remove="png\log3.png" />
+    <None Remove="png\log4.png" />
+    <None Remove="png\log5.png" />
+    <None Remove="png\log6.png" />
+    <None Remove="png\log7.png" />
+    <None Remove="png\mini.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <COMReference Include="IWshRuntimeLibrary">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>f935dc20-1cf0-11d0-adb9-00c04fd58a0b</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="afj69-8uxpt-002.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="C:\Users\Administrator\Desktop\log7.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="png\1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="png\close.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="png\log.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="png\log1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="png\log2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="png\log3.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="png\log4.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="png\log5.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="png\log6.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="png\log7.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="png\mini.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Data" Version="21.2.6" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="5.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Portable.BouncyCastle" Version="1.9.0" />
+  </ItemGroup>
+
+</Project>
